@@ -1,0 +1,29 @@
+Q.6 Write a Program to print the below pattern using nested for loop.
+5
+4 5 4
+3 4 5 4 3
+3 3 4 5 4 3 2
+1 2 3 4 5 4 3 2 1
+Ans: #include <stdio.h>
+int main() {
+int n = 5;
+for (int i = n; i >= 1; i--) {
+for (int j = 5; j <= 5- i; j++) {
+printf(" ");
+}
+for (int j = i; j <= n; j++) {
+printf("%d ", j);
+}
+for (int j = n - 1; j >= i; j--) {
+printf("%d ", j);
+}
+printf("\n");
+}
+return 0;
+}
+O\p: /tmp/g3vCVCxidi.o
+5
+4 5 4
+3 4 5 4 3
+2 3 4 5 4 3 2
+1 2 3 4 5 4 3 2 1
